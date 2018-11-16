@@ -1,1 +1,2 @@
-# AWS-Certification-CourseWork
+# AWS Certification Course Work
+1. AWS Certified Solutions Architect
