@@ -19,5 +19,18 @@
     + IPv4 or IPv6, similar to phonebook analogy  
     + Top level domain (TLD) are .com, .edu, .gov for example  
     + TLD is controlled by IANA, the Internet Assigned Numbers Authority, in the root zone database  
-    + domain registars are authority that can assign domain names so that there is no duplicates  
+    + domain registars are authority that can assign domain names so that there is no duplicates    
+    + start of authority record (SOA) stores info about the name of server that supplies the data for the zone, which are:
+            + the admin of the zone  
+            + current version of the file  
+            + time to live (TTL) in seconds on resource records           
+    +  name record (NS)
+    +  authority (A) address  
+    +  canonical name (CName) - used to resolve one domain to another, maps one domain to another  
+    +  **alias record** - this is unique to AWS Route53, which map resources like ELB, naked domain names to point to S# bucket or etc.  
+            + CNAME cannot be used for naked domain names, example: http://acloud.guru  
+
+#### Exam Tips
+    + Elastic Load Balancers do not have predefined IPv4 addresses, you resolve to them using DNS name
+  
     
